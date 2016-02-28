@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Invoice</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900,100italic,400italic' rel='stylesheet' type='text/css'>
+  <style>
+  html,
+  body,
+  div,
+  span,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  abbr,
+  address,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  samp,
+  small,
+  strong,
+  sub,
+  sup,
+  var,
+  b,
+  i,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+  .float_left {
+    float: left;
+  }
+  .float_right {
+    float: right;
+  }
+  .row {
+    width: 1080px;
+  }
+  .cf:before,
+  .cf:after,
+  .row:before,
+  .row:after {
+    content: "";
+    display: table;
+  }
+  .cf:after,
+  .row:after {
+    clear: both;
+  }
+  .ta-left {
+    text-align: left;
+  }
+  .ta-right {
+    text-align: right;
+  }
+  .ta-center {
+    text-align: center;
+  }
+  .row {
+    background-color: #fff;
+    margin: 0 auto;
+  }
+  p {
+    color: #999;
+    line-height: 25px;
+  }
+  p:nth-child(1) {
+    color: #111;
+  }
+  .container {
+    width: 77%;
+    margin: 0 auto;
+  }
+  .header {
+    padding: 120px 0 0;
+    font-family: 'Roboto';
+  }
+  .header .icon {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    font-size: 26px;
+    width: 70px;
+    height: 70px;
+  }
+  .header .contact {
+    text-align: right;
+  }
+  .header .contact p:first-child {
+    margin-bottom: 25px;
+  }
+  .recipient {
+    font-family: 'Roboto';
+    padding: 50px 0;
+  }
+  .recipient .address p:first-child {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .recipient .address p:nth-child(4) {
+    margin-bottom: 25px;
+  }
+  .recipient .invoice {
+    text-align: right;
+  }
+  .recipient .invoice h1 {
+    font-size: 30px;
+    padding-bottom: 25px;
+  }
+  .recipient .invoice p:nth-child(2) {
+    color: #111;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .contents {
+    font-family: 'Roboto';
+  }
+  .contents table {
+    width: 100%;
+  }
+  .contents table th {
+    padding: 12px 0;
+  }
+  .contents table td {
+    color: #999;
+    padding: 12px 0;
+  }
+  .contents table .divider {
+    border-bottom: 1px solid #999;
+  }
+  .notes {
+    font-family: 'Roboto';
+  }
+  .notes .container {
+    padding: 30px 0 30px;
+    border-bottom: 1px solid #999;
+  }
+  .notes p {
+    margin: 20px 0 0;
+  }
+  .notes p:first-child {
+    font-weight: bold;
+  }
+  .footer {
+    font-family: 'Roboto';
+    padding: 20px 0 100px;
+  }
+  .footer p {
+    color: #999;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="row header">
+    <div class="row container">
+      <div class="icon float_left">m.</div>
+      <div class="contact float_right">
+        <p>MILAN VUCKOVIC</p>
+        <p>www.milanvuckovick.net</p>
+        <p>hello@milanvuckovick.net</p>
+        <p>+381 64 1234 567</p>
+      </div>
+    </div>
+  </div>
+  <div class="row recipient">
+    <div class="row container">
+      <div class="address float_left">
+        <p>RECIPIENT</p>
+        <p>James Victore</p>
+        <p>36 S 4th St</p>
+        <p>Brooklyn, NY 11249, USA</p>
+        <p>james@jamesvictore.com</p>
+        <p>+1 234 5678 901</p>
+      </div>
+      <div class="invoice float_right">
+        <h1>INVOICE</h1>
+        <p>INVOICE NUMBER</p>
+        <p>15122015-02</p>
+      </div>
+    </div>
+  </div>
+  <div class="row contents">
+    <div class="row container">
+      <table>
+        <tr>
+          <th class="ta-left">INVOICE DATE</th>
+          <th class="ta-left">TASK DESCRIPTION</th>
+          <th class="ta-center">RATE</th>
+          <th class="ta-center">HOURS</th>
+          <th class="ta-right">AMOUNT</th>
+        </tr>
+        <tr>
+          <td class="ta-left">15 DEC 2015</td>
+          <td class="ta-left">Badass Poster Design - A4</td>
+          <td class="ta-center">$40</td>
+          <td class="ta-center">8</td>
+          <td class="ta-right">$320.00</td>
+        </tr>
+        <tr>
+          <td class="ta-left"></td>
+          <td class="ta-left">Website Redesign</td>
+          <td class="ta-center">$40</td>
+          <td class="ta-center">25</td>
+          <td class="ta-right">$1000.00</td>
+        </tr>
+        <tr>
+          <td class="ta-left"></td>
+          <td class="ta-left">iOS Aplication Design</td>
+          <td class="ta-center">$40</td>
+          <td class="ta-center">30</td>
+          <td class="ta-right">$1200.00</td>
+        </tr>
+        <tr>
+          <td class="ta-left"></td>
+          <td class="ta-left">Newsletter Template Design</td>
+          <td class="ta-center">$40</td>
+          <td class="ta-center">10</td>
+          <td class="ta-right">$400.00</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="divider" colspan="4"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td colspan="4"></td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+          <td class="ta-center">Subtotal</td>
+          <td></td>
+          <td class="ta-right">$2920.00</td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+          <td class="ta-center">PayPal Fee</td>
+          <td></td>
+          <td class="ta-right">5.00 %</td>
+        </tr>
+        <tr>
+          <td colspan="2"></td>
+          <td class="ta-center">TOTAL</td>
+          <td></td>
+          <td class="ta-right">$3066.00</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="row notes">
+    <div class="row container">
+      <p>NOTES</p>
+      <p>Payment should be paid in full no later than 15 days after receiving this invoice.</p>
+      <p>Have a nice day and thank you!<br>Millan</p>
+    </div>
+  </div>
+  <div class="row footer">
+    <div class="row container">
+      <p>Milan Vuckovic. All Rights Rseserved &#169; 2015  &#8226;  Hello@milanvuckovic.net</p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
